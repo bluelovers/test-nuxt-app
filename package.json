@@ -13,6 +13,8 @@
     "dev": "nuxt",
     "generate": "nuxt generate",
     "lint": "npx eslint **/*.ts",
+    "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
+    "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
     "ncu": "npx yarn-tool ncu -u",
     "prepublishOnly": "npm run ncu && npm run sort-package-json && npm run test",
     "postpublish": "git commit -m \"publish new version\" .",
@@ -35,7 +37,7 @@
     "nuxt-i18n": "^5.12.4"
   },
   "devDependencies": {
-    "@bluelovers/tsconfig": "^1.0.9",
+    "@bluelovers/tsconfig": "^1.0.11",
     "@nuxt/typescript": "^2.8.1",
     "nodemon": "^1.19.1",
     "now": "^15.5.0",
