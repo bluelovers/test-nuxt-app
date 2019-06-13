@@ -1,0 +1,45 @@
+{
+  "name": "test-nuxt-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My outstanding Nuxt.js project",
+  "keywords": [],
+  "license": "ISC",
+  "author": "bluelovers",
+  "main": "nuxt.config.ts",
+  "scripts": {
+    "build": "nuxt build",
+    "coverage": "npx nyc npm run test",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "npx eslint **/*.ts",
+    "ncu": "npx yarn-tool ncu -u",
+    "prepublishOnly": "npm run ncu && npm run sort-package-json && npm run test",
+    "postpublish": "git commit -m \"publish new version\" .",
+    "sort-package-json": "npx sort-package-json ./package.json",
+    "serve:nuxt": "nuxt",
+    "start": "nuxt start",
+    "nuxt:generate": "nuxt generate",
+    "nuxt:spa": "nuxt build --spa",
+    "now-build": "yarn run nuxt:generate",
+    "now:dev": "now dev",
+    "now:deploy": "now",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.6.6",
+    "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/vuetify": "0.5.6",
+    "nuxt": "^2.8.1",
+    "nuxt-i18n": "^5.12.4"
+  },
+  "devDependencies": {
+    "@bluelovers/tsconfig": "^1.0.9",
+    "@nuxt/typescript": "^2.8.1",
+    "nodemon": "^1.19.1",
+    "now": "^15.5.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
