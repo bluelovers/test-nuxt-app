@@ -12,21 +12,21 @@
     "coverage": "npx nyc npm run test",
     "dev": "nuxt",
     "generate": "nuxt generate",
+    "install:peer": "yarn add ts-node",
     "lint": "npx eslint **/*.ts",
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
     "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
     "ncu": "npx yarn-tool ncu -u",
-    "prepublishOnly": "npm run ncu && npm run sort-package-json && npm run test",
-    "postpublish": "git commit -m \"publish new version\" .",
-    "sort-package-json": "npx sort-package-json ./package.json",
-    "serve:nuxt": "nuxt",
-    "start": "nuxt start",
+    "now-build": "yarn run install:peer && yarn run nuxt:generate",
+    "now:deploy": "now",
+    "now:dev": "now dev",
     "nuxt:generate": "nuxt generate",
     "nuxt:spa": "nuxt build --spa",
-    "now-build": "yarn run install:peer && yarn run nuxt:generate",
-    "now:dev": "now dev",
-    "now:deploy": "now",
-    "install:peer": "yarn add ts-node",
+    "prepublishOnly": "npm run ncu && npm run sort-package-json && npm run test",
+    "postpublish": "git commit -m \"publish new version\" .",
+    "serve:nuxt": "nuxt",
+    "sort-package-json": "npx sort-package-json ./package.json",
+    "start": "nuxt start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -37,9 +37,6 @@
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4"
   },
-  "peerDependencies": {
-    "ts-node": "latest"
-  },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.11",
     "@nuxt/typescript": "^2.8.1",
@@ -47,5 +44,8 @@
     "now": "^15.5.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
+  },
+  "peerDependencies": {
+    "ts-node": "latest"
   }
 }
