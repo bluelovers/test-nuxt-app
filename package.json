@@ -23,9 +23,10 @@
     "start": "nuxt start",
     "nuxt:generate": "nuxt generate",
     "nuxt:spa": "nuxt build --spa",
-    "now-build": "yarn run nuxt:generate",
+    "now-build": "yarn run install:peer && yarn run nuxt:generate",
     "now:dev": "now dev",
     "now:deploy": "now",
+    "install:peer": "yarn add ts-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -35,6 +36,9 @@
     "@nuxtjs/vuetify": "0.5.6",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4"
+  },
+  "peerDependencies": {
+    "ts-node": "latest"
   },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.11",

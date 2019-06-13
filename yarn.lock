@@ -693,10 +693,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@bluelovers/tsconfig@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@bluelovers/tsconfig/-/tsconfig-1.0.9.tgz#d86267ed20cb71cd870c67d1d7a33e4c5c377d99"
-  integrity sha512-joOWm6QvrcAKCNfMz1Kg96OYVn656utsA1+YMwJBopecX0UnvcUM0wphKHy0I9r28iTdTxQerhBI4S45EJuDXg==
+"@bluelovers/tsconfig@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@bluelovers/tsconfig/-/tsconfig-1.0.11.tgz#611432bbb2669983b209c923e0c23216d7e43b1d"
+  integrity sha512-HpTkgI1Ic5i18e1EJ0E63qVX7TujTdxwY1v+XDe/ctD8j+d/J72YX0oriyIagyeA1Uff23Jn6q8JKezRkbXprw==
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
