@@ -7,6 +7,8 @@ export default <NuxtConfiguration>{
 
 	modern: 'client',
 
+	devtools: true,
+
 	/*
 	** Headers of the page
 	*/
@@ -37,6 +39,9 @@ export default <NuxtConfiguration>{
 	** Global CSS
 	*/
 	css: [],
+
+
+
 	/*
 	** Plugins to load before mounting the App
 	*/
@@ -89,6 +94,9 @@ export default <NuxtConfiguration>{
 	*/
 	build: {
 		parallel: true,
+
+		extractCSS: true,
+
 		/*
 		** You can extend webpack config here
 		*/
@@ -100,6 +108,19 @@ export default <NuxtConfiguration>{
 			consoleDebug.dir(config, {
 				depth: 1,
 			});
+		},
+	},
+
+	render: {
+		resourceHints: false,
+		http2: {
+			push: true,
+		}
+	},
+
+	watchers: {
+		webpack: {
+			aggregateTimeout: 5000,
 		},
 	},
 
