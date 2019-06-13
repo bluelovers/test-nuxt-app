@@ -1,0 +1,12 @@
+[build]
+publish = "dist/"
+command = "yarn run build:netlify"
+[build.environment]
+#  TS_NODE_TRANSPILE_ONLY = "true"
+  YARN_VERSION = "1.15.2"
+#  YARN_FLAGS = "--no-lockfile"
+  FORCE_COLOR = "1"
+#  NODE_ENV = "production"
+  ENV_IS_REMOTE = "1"
+
+

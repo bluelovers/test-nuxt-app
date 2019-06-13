@@ -1,0 +1,31 @@
+# https://play.netlify.com/headers
+
+/static/*
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
+Cache-Control: max-age=7200
+
+/*.ico
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: X-Requested-With, Content-Type, Accept
+Cache-Control: max-age=2592000
+
+/*.html
+Cache-Control: max-age=7200
+
+/*.js
+Cache-Control: max-age=2592000
+
+/*.css
+Cache-Control: max-age=2592000
+
+/**/*.js
+Cache-Control: max-age=2592000
+
+/**/*.css
+Cache-Control: max-age=2592000
+
+/fonts/*
+Cache-Control: max-age=2592000

@@ -1,3 +1,16 @@
 {
-  "extends": "@bluelovers/tsconfig/vue/nuxt"
+  "extends": "@bluelovers/tsconfig/vue/nuxt.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "jsx": "preserve",
+    "skipLibCheck": true
+  }
 }
