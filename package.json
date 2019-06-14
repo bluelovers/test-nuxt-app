@@ -53,6 +53,7 @@
     "roboto-fontface": "^0.10.0"
   },
   "devDependencies": {
+    "@nuxtjs/now-builder": "^0.14.4",
     "@bazzite/nuxt-netlify": "^0.1.1",
     "@bluelovers/tsconfig": "^1.0.11",
     "@nuxt/typescript": "^2.8.1",
