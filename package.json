@@ -52,7 +52,7 @@
     "regexp-cjk": "^3.3.3",
     "regexp-cjk-plugin-extra": "^1.0.2",
     "roboto-fontface": "^0.10.0",
-    "ts-nuxt-now-builder": "^1.0.7"
+    "ts-nuxt-now-builder": "^1.0.8"
   },
   "devDependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
