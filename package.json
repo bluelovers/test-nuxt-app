@@ -9,9 +9,10 @@
   "main": "nuxt.config.ts",
   "scripts": {
     "build": "nuxt build",
+    "build:start": "nuxt build & nuxt start",
     "build:generate": "nuxt generate",
     "build:netlify": "yarn run install:peer && yarn run nuxt:generate",
-    "build:now": "yarn run install:peer && yarn run nuxt:generate",
+    "build:now": "yarn run install:peer && yarn run build:start",
     "coverage": "npx nyc npm run test",
     "dev": "nuxt",
     "generate": "nuxt generate",
