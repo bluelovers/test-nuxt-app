@@ -2,6 +2,9 @@ import NuxtConfiguration from '@nuxt/config'
 import colors from 'vuetify/es5/util/colors'
 import { consoleDebug } from './lib/console';
 
+consoleDebug.info(`process.env`);
+consoleDebug.dir(process.env);
+
 export default <NuxtConfiguration>{
 	mode: 'universal',
 
@@ -64,6 +67,7 @@ export default <NuxtConfiguration>{
 		},
 		],
 		['@bazzite/nuxt-netlify', {}],
+		'@nuxtjs/sitemap',
 	],
 	/*
 	** Axios module configuration
