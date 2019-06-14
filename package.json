@@ -13,7 +13,7 @@
     "build:start": "nuxt build & nuxt start",
     "build:generate": "nuxt generate",
     "build:netlify": "yarn run install:peer && yarn run nuxt:generate",
-    "build:now": "yarn run install:peer && yarn run build:prepublish && yarn run build:start",
+    "build:now": "yarn run install:peer && yarn run build:generate",
     "coverage": "npx nyc npm run test",
     "dev": "nuxt",
     "generate": "nuxt generate",
