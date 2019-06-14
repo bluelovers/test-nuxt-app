@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@nuxtjs/now-builder",
+      "use": "./local.now-builder.js",
       "config": {
         "serverFiles": [
           "middleware/**",
