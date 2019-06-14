@@ -97,10 +97,6 @@ export default <NuxtConfiguration>{
 	** Build configuration
 	*/
 	build: {
-		parallel: true,
-
-		extractCSS: true,
-
 		/*
 		** You can extend webpack config here
 		*/

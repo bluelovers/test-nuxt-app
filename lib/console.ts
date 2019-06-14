@@ -3,6 +3,7 @@
  */
 
 import console, { Console2 } from 'debug-color2';
+import consola from 'consola';
 
 export const consoleDebug = new Console2(null, {
 	label: true,
@@ -12,4 +13,4 @@ export const consoleDebug = new Console2(null, {
 	}
 });
 
-export default console
+export { console }

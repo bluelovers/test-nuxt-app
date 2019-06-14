@@ -13,5 +13,12 @@
     },
     "jsx": "preserve",
     "skipLibCheck": true
-  }
+  },
+  "exclude": [
+    "dist",
+    "static",
+    ".netlify",
+    ".nuxt",
+    "node_modules"
+  ]
 }
