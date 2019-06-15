@@ -9,34 +9,37 @@
   "main": "nuxt.config.ts",
   "scripts": {
     "build": "nuxt build",
-
-    "build:prepublish": "yarn run tsc:ts-node",
-    "build:start": "nuxt build & nuxt start",
     "build:generate": "nuxt generate",
     "build:netlify": "yarn run install:peer && yarn run nuxt:generate",
     "build:now": "yarn run install:peer && yarn run build:generate",
+    "build:now:express": "yarn run install:peer && yarn run now:express",
+    "build:prepublish": "yarn run tsc:ts-node",
+    "build:start": "nuxt build & nuxt start",
     "coverage": "npx nyc npm run test",
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "install:peer": "yarn add ts-node",
+    "install:peer": "yarn add ts-node typescript esm",
     "lint": "npx eslint **/*.ts",
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
     "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
     "ncu": "npx yarn-tool ncu -u",
     "now-build": "yarn run build:now",
     "now:deploy": "now",
-    "now:local": "now ./dist/",
     "now:dev": "now dev",
+    "now:express": "yarn run build && yarn run express:start",
+    "now:local": "now ./dist/",
     "nuxt:generate": "nuxt generate",
     "nuxt:spa": "nuxt build --spa",
     "prepublishOnly": "npm run ncu && npm run sort-package-json && npm run test",
     "postpublish": "git commit -m \"publish new version\" .",
     "serve:nuxt": "nuxt",
-    "tsc:config": "tsc --showConfig",
-    "tsc:ts-node": "tsc -p tsconfig.ts-node.json",
     "sort-package-json": "npx sort-package-json ./package.json",
     "start": "nuxt start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:config": "tsc --showConfig",
+    "tsc:ts-node": "tsc -p tsconfig.ts-node.json",
+    "express:dev": "cross-env NODE_ENV=development nodemon",
+    "express:start": "cross-env NODE_ENV=production node -r esm -r ts-node/register server/index"
   },
   "dependencies": {
     "@nuxtjs/auth": "^4.6.6",
@@ -53,6 +56,7 @@
     "material-design-icons-iconfont": "^5.0.1",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4",
+    "nuxt-vuex-localstorage": "^1.2.6",
     "regexp-cjk": "^3.3.3",
     "regexp-cjk-plugin-extra": "^1.0.2",
     "roboto-fontface": "^0.10.0"
@@ -63,6 +67,7 @@
     "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/dotenv": "^1.3.0",
     "@types/webpack-chain": "^5.2.0",
+    "cross-env": "^5.2.0",
     "debug-color2": "^1.1.6",
     "nodemon": "^1.19.1",
     "now": "^15.5.0",
@@ -73,8 +78,8 @@
   },
   "peerDependencies": {
     "@nuxtjs/now-builder": "^0.14.4",
-    "ts-nuxt-now-builder": "^1.0.9",
     "ts-node": "latest",
+    "ts-nuxt-now-builder": "^1.0.9",
     "typescript": "next"
   }
 }

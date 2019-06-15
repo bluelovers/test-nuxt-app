@@ -66,6 +66,7 @@ export default <NuxtConfiguration>{
 			maxAge: 1000 * 60 * 60,
 		},
 		],
+		['nuxt-vuex-localstorage'],
 		['@bazzite/nuxt-netlify', {}],
 		'@nuxtjs/sitemap',
 	],
