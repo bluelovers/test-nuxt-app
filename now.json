@@ -3,11 +3,12 @@
   "builds": [
     {
       "src": "server/index.js",
-      "use": "@now/node",
+      "use": "now-node-async",
       "config": {
         "maxLambdaSize": "50mb"
       }
-    }
+    },
+    { "src": "package.json", "use": "@now/static-build" }
   ],
   "github": {
     "silent": true
