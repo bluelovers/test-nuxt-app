@@ -23,7 +23,7 @@
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
     "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
     "ncu": "npx yarn-tool ncu -u",
-    "now-build": "yarn run build:now",
+    "now-build": "yarn run build:now:express",
     "now:deploy": "now",
     "now:dev": "now dev",
     "now:express": "yarn run build && yarn run express:start",
