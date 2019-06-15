@@ -4,6 +4,14 @@
     {
       "src": "package.json",
       "use": "@now/node"
+    },
+    {
+      "src": ".nuxt/dist/server/server.js",
+      "use": "@now/node"
+    },
+    {
+      "src": ".nuxt/dist/client/**/*",
+      "use": "@now/static"
     }
   ],
   "github": {

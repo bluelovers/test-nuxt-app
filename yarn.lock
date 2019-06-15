@@ -1234,7 +1234,7 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^3.2.0"
 
-"@nuxtjs/auth@^4.6.6":
+"@nuxtjs/auth@^4.7.0":
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/auth/-/auth-4.7.0.tgz#706de9bc93d8bd0fcb5f23c062129460b0c5cc0d"
   integrity sha512-K+lBU6ZB16SHwBH8SyVfdAYW2Qf/iW+avDxqwbNNzqgOQ9OFd/GQ9UZK6zdVfpmNFtPrQ5d+N4q2m1FU1o5g4A==
@@ -1540,7 +1540,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^12.0.8":
   version "12.0.8"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.8.tgz#551466be11b2adc3f3d47156758f610bd9f6b1d8"
   integrity sha512-b8bbUOTwzIY3V5vDTY1fIJ+ePKDUBqt2hC2woVGotdQQhG/2Sh62HOKHrT7ab+VerXAcPyAiTEipPu/FsreUtg==
@@ -2823,7 +2823,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cjk-conv@^1.1.57, cjk-conv@^1.1.58, cjk-conv@^1.1.61:
+cjk-conv@^1.1.57, cjk-conv@^1.1.61:
   version "1.1.61"
   resolved "https://registry.yarnpkg.com/cjk-conv/-/cjk-conv-1.1.61.tgz#668f905dea6cf4be0ea5382f3f845502d12b4185"
   integrity sha512-F3OZLh7afScgsZzenPyabw9pP68uBT+KRgerSqaa3ItCVIz5v7oc6ZBqk1SYyV07fRFdQdYlLcUqWx3Z0rSSYg==
@@ -7907,28 +7907,36 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-regexp-cjk-plugin-extra@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/regexp-cjk-plugin-extra/-/regexp-cjk-plugin-extra-1.0.2.tgz#0e634d609b838dcd0b8bf2676cce3101a1f03bcb"
-  integrity sha512-2Rj8tQMnFef3L5rbLp8vG89kBPP6hiDcpBAhaulls0RDwHvyIRU7Sjqk/ziF2X7MocQoKwtmIrxB0HctMpA6TQ==
+regexp-cjk-plugin-escape-unicode-property@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/regexp-cjk-plugin-escape-unicode-property/-/regexp-cjk-plugin-escape-unicode-property-1.0.1.tgz#3dd869adb012378ed7e562561e0ac150e0da9737"
+  integrity sha512-lwqMcBaxN3t/p35wNeT7LCCOGLds6QzDlFarHG3WIJ3TCRf//FHDoBHLBxc/HinNCTEFkK66gZ0g/qoI8osh6w==
+  dependencies:
+    regexpu-core "^4.5.4"
+
+regexp-cjk-plugin-extra@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/regexp-cjk-plugin-extra/-/regexp-cjk-plugin-extra-1.0.4.tgz#c9c59a98522a263b9d3929967ecc49e8210ea2aa"
+  integrity sha512-J2QA1R8BjECSxX7M2mejLIbfxCkyX+b1JqBPyM0WZJuq021x95+RiTyRDtConDf56e/9pbpIUpuoTCC5ysUIWg==
   dependencies:
     array-hyper-unique "^1.0.7"
     lodash.deburr "^4.1.0"
     str-util "^2.3.21"
     uni-string "^1.1.2"
 
-regexp-cjk@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/regexp-cjk/-/regexp-cjk-3.3.3.tgz#288829649ee0ec9dfe1e5466bedb550ba5b4e085"
-  integrity sha512-HlcxpbPqlazRwodCQWib68qKT5TGZBldYJnGkne/lR5rq8WPgLFOtt/IUcUQZxsvxh8GjlUK/TiH6hS+FW/oDw==
+regexp-cjk@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/regexp-cjk/-/regexp-cjk-3.3.4.tgz#4c3e28c9f89fe4eb741f16bd22d8a9c99b69c3d9"
+  integrity sha512-7gauQqST1ta4BuhvA15aPNGOaqT1wPdI6s8PkH2dO6hIij1FrfUf7bJGfRfTEhT16yvccu1MDUgH5Q50H1srQg==
   dependencies:
     array-hyper-unique "^1.0.7"
-    cjk-conv "^1.1.58"
+    cjk-conv "^1.1.61"
+    lodash "^4.17.11"
     regexp-helper "^1.0.8"
-    regexp-parser-event "^1.1.3"
+    regexp-parser-event "^1.1.5"
     regexp-parser-literal "^1.1.0"
     regexp-range "^1.0.7"
-    regexp-support "^1.0.24"
+    regexp-support "^1.0.25"
 
 regexp-helper-core@^1.0.6:
   version "1.0.6"
@@ -7943,14 +7951,15 @@ regexp-helper@^1.0.8:
     regexp-helper-core "^1.0.6"
     regexp-support "^1.0.24"
 
-regexp-parser-event@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/regexp-parser-event/-/regexp-parser-event-1.1.3.tgz#21650ce18bfd3d38dfd7a219746a3b51680b973e"
-  integrity sha512-u4NqobNtUNWSx2iSaIYe3QhLCE4fMv4cwTWmDr4rFtAOtd0MoSQw0RZORRKCreysxvYu6zHlodqULDHas9BYfw==
+regexp-parser-event@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/regexp-parser-event/-/regexp-parser-event-1.1.5.tgz#d209288e679ce846857a2b473a096cdd3f1424c9"
+  integrity sha512-LofuoqV5xHhe63BXsz8rHezhf+NYMyKSzpQ+Aue+A4znxhGTibMdkBDceK118Ly2jWdkQycl/cIxvK61mVMQJg==
   dependencies:
     array-hyper-unique "^1.0.7"
     regexp-parser-literal "^1.1.0"
     regexpp2 "^1.3.0"
+    ts-type "^1.2.9"
 
 regexp-parser-literal@^1.1.0:
   version "1.1.0"
@@ -7971,7 +7980,7 @@ regexp-range@^1.0.7:
     fill-range "^6.0.0"
     japanese "^1.2.0"
 
-regexp-support@^1.0.24:
+regexp-support@^1.0.24, regexp-support@^1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/regexp-support/-/regexp-support-1.0.25.tgz#477e233f929f6bf82bb80708cf066825d8419a8d"
   integrity sha512-NCTOLOC0VSY/0bdsDLDNnLZ/v3CaxxUYdZKJ+XWxiAypRrSUfUMI1CNXCksNS3xB8d0FiiwQUO4BsY5A3t51vg==
@@ -9125,6 +9134,13 @@ ts-loader@^6.0.2:
     micromatch "^4.0.0"
     semver "^6.0.0"
 
+ts-type@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/ts-type/-/ts-type-1.2.9.tgz#117841e1f25934898a680c2c416df4d7820d709d"
+  integrity sha512-g1tViOMrT41WoKYvVVz2zPRQJiG/47V43X3yd7qdnpQs79KBTl7V+fqdQ3UtH8DDyu7BDVMXdfN5+yW3RUZq0w==
+  dependencies:
+    typedarray-dts "^1.0.0"
+
 tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
@@ -9174,6 +9190,11 @@ type@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/type/-/type-1.0.1.tgz#084c9a17fcc9151a2cdb1459905c2e45e4bb7d61"
   integrity sha512-MAM5dBMJCJNKs9E7JXo4CXRAansRfG0nlJxW7Wf6GZzSOvH31zClSaHdIMWLehe/EGMBkqeC55rrkaOr5Oo7Nw==
+
+typedarray-dts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/typedarray-dts/-/typedarray-dts-1.0.0.tgz#9dec9811386dbfba964c295c2606cf9a6b982d06"
+  integrity sha512-Ka0DBegjuV9IPYFT1h0Qqk5U4pccebNIJCGl8C5uU7xtOs+jpJvKGAY4fHGK25hTmXZOEUl9Cnsg5cS6K/b5DA==
 
 typedarray@^0.0.6:
   version "0.0.6"
