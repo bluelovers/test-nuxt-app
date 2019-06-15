@@ -1,6 +1,8 @@
 {
   "extends": "@bluelovers/tsconfig/vue/nuxt.json",
   "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
     "declaration": false,
     "baseUrl": ".",
     "paths": {

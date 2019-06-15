@@ -9,7 +9,7 @@ import config from '../nuxt.config'
 
 config.dev = !(process.env.NODE_ENV === 'production')
 
-async function start()
+export async function start()
 {
 	// Init Nuxt.js
 	const nuxt = new Nuxt(config)
@@ -38,4 +38,4 @@ async function start()
 	})
 }
 
-start()
+export default start

@@ -2,16 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "server/index.js",
       "use": "@now/node"
-    },
-    {
-      "src": ".nuxt/dist/server/server.js",
-      "use": "@now/node"
-    },
-    {
-      "src": ".nuxt/dist/client/**/*",
-      "use": "@now/static"
     }
   ],
   "github": {

@@ -20,7 +20,7 @@
     "express:dev": "cross-env NODE_ENV=development nodemon",
     "express:start": "cross-env NODE_ENV=production node -r esm -r ts-node/register server/index",
     "generate": "nuxt generate",
-    "install:peer": "yarn add ts-node typescript esm",
+    "install:peer": "yarn add ts-node typescript@next esm && yarn global add ts-node typescript@next && npm i -g ts-node typescript@next",
     "lint": "npx eslint **/*.ts",
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
     "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
@@ -53,6 +53,7 @@
     "@nuxtjs/vuetify": "0.5.6",
     "cjk-conv": "^1.1.61",
     "consola": "^2.7.1",
+    "esm": "^3.2.25",
     "material-design-icons-iconfont": "^5.0.1",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4",
@@ -60,7 +61,9 @@
     "regexp-cjk": "^3.3.4",
     "regexp-cjk-plugin-escape-unicode-property": "^1.0.1",
     "regexp-cjk-plugin-extra": "^1.0.4",
-    "roboto-fontface": "^0.10.0"
+    "roboto-fontface": "^0.10.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
   },
   "devDependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
