@@ -20,7 +20,7 @@
     "express:dev": "cross-env NODE_ENV=development nodemon",
     "express:start": "cross-env NODE_ENV=production node -r esm -r ts-node/register server/index",
     "generate": "nuxt generate",
-    "install:peer": "yarn add ts-node typescript@next esm && yarn global add ts-node typescript@next && npm i -g ts-node typescript@next",
+    "install:peer": "yarn add ts-node typescript@next esm ts-loader && yarn global add ts-node typescript@next ts-loader && npm i -g ts-node typescript@next ts-loader",
     "lint": "npx eslint **/*.ts",
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
     "lintfix:vue": "eslint --fix --ext .ts,.vue --ignore-path .gitignore .",
@@ -62,8 +62,9 @@
     "regexp-cjk-plugin-escape-unicode-property": "^1.0.1",
     "regexp-cjk-plugin-extra": "^1.0.4",
     "roboto-fontface": "^0.10.0",
+    "ts-loader": "^6.0.2",
     "ts-node": "^8.3.0",
-    "typescript": "^3.5.2"
+    "webpack-chain": "^6.0.0"
   },
   "devDependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
@@ -78,14 +79,13 @@
     "now": "^15.5.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue-property-decorator": "^8.1.1",
-    "webpack-chain": "^6.0.0"
+    "vue-property-decorator": "^8.1.1"
   },
   "peerDependencies": {
     "@nuxtjs/now-builder": "^0.14.4",
-    "esm": "^3.2.25",
-    "ts-node": "latest",
-    "ts-nuxt-now-builder": "^1.0.9",
-    "typescript": "next"
+    "ts-nuxt-now-builder": "^1.0.9"
+  },
+  "resolutions": {
+
   }
 }
