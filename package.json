@@ -53,6 +53,7 @@
     "consola": "^2.7.1",
     "esm": "^3.2.25",
     "material-design-icons-iconfont": "^5.0.1",
+    "now-node-async": "^0.7.4-canary.11.2",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4",
     "nuxt-vuex-localstorage": "^1.2.6",
@@ -83,7 +84,5 @@
     "@nuxtjs/now-builder": "^0.14.4",
     "ts-nuxt-now-builder": "^1.0.9"
   },
-  "resolutions": {
-
-  }
+  "resolutions": {}
 }
