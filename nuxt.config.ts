@@ -1,11 +1,11 @@
 import NuxtConfiguration from '@nuxt/config'
 import colors from 'vuetify/es5/util/colors'
-import { consoleDebug } from './lib/console';
 
-consoleDebug.info(`process.env`);
-consoleDebug.dir(process.env);
 
-export default <NuxtConfiguration>{
+console.info(`process.env`);
+console.dir(process.env);
+
+export default {
 	mode: 'universal',
 
 	modern: 'client',
@@ -105,8 +105,8 @@ export default <NuxtConfiguration>{
 		{
 			const { isClient, isDev, isServer, loaders } = ctx;
 
-			consoleDebug.info(`webpack config`, `context:`, ctx);
-			consoleDebug.dir(config, {
+			console.info(`webpack config`, `context:`, ctx);
+			console.dir(config, {
 				depth: 1,
 			});
 		},

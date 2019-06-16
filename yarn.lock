@@ -969,6 +969,11 @@
   resolved "https://registry.yarnpkg.com/@kazupon/vue-i18n-loader/-/vue-i18n-loader-0.3.0.tgz#e068de2d75d891275814ae28ad1fcaf1b537694f"
   integrity sha512-M2280E9PMxetu6mOdtyh1d6Dif7LwH4gvxD2dgsu7HOyzR26AUNok8DxZ1Y5YAexJvPfbBXC75Llui2myO05Hg==
 
+"@now/node-bridge@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@now/node-bridge/-/node-bridge-1.1.4.tgz#80b3311d90b1bf2d7e1fec4ad9f5b98bd1192dd6"
+  integrity sha512-P9hsw8EphqWxrD8hSBz8lq4O95R3Sbr2id5gKnjmX0b+coi1l0jiNAEgt9zWL6v44touQLDf4ed42HF+solAqA==
+
 "@nuxt/babel-preset-app@2.8.1":
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.8.1.tgz#4b6b9ec293d66426034b30409ebda8b17e625014"
@@ -1877,6 +1882,18 @@
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
+
+"@zeit/ncc-watcher@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@zeit/ncc-watcher/-/ncc-watcher-1.0.3.tgz#c4569d13db7b80a96a7672047c069400e69913ae"
+  integrity sha512-367wm9bGMBCwT8kHQckw8UY/iYhC9rdzj357FBoM0SjVvWv53yziEmd12RkeF1EsBs0F2a1uBYdUaUvGo6LfkA==
+  dependencies:
+    "@zeit/ncc" "^0.18.5"
+
+"@zeit/ncc@0.18.5", "@zeit/ncc@^0.18.5":
+  version "0.18.5"
+  resolved "https://registry.yarnpkg.com/@zeit/ncc/-/ncc-0.18.5.tgz#5687df6c32f1a2e2486aa110b3454ccebda4fb9c"
+  integrity sha512-F+SbvEAh8rchiRXqQbmD1UmbePY7dCOKTbvfFtbVbK2xMH/tyri5YKfNxXKK7eL9EWkkbqB3NTVQO6nokApeBA==
 
 abbrev@1:
   version "1.1.1"
@@ -4431,7 +4448,7 @@ front-matter@^2.1.2:
   dependencies:
     js-yaml "^3.10.0"
 
-fs-extra@^7.0.1:
+fs-extra@7.0.1, fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
   integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
@@ -6417,6 +6434,16 @@ normalize-url@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
+
+now-node-async@^0.8.1-test.4:
+  version "0.8.1-test.4"
+  resolved "https://registry.yarnpkg.com/now-node-async/-/now-node-async-0.8.1-test.4.tgz#2582d813d7df4d4a8794dd1f20786bee54066f3d"
+  integrity sha512-mWuiuzMXAXU5m7u/hd7KIpbAjqeDefEQJOGlkHN4rMA5GF7tZliCPPl4RdbvPmRXsa849e2kKJKZEc78WjcO5A==
+  dependencies:
+    "@now/node-bridge" "^1.1.4"
+    "@zeit/ncc" "0.18.5"
+    "@zeit/ncc-watcher" "1.0.3"
+    fs-extra "7.0.1"
 
 now@^15.5.0:
   version "15.5.0"
@@ -9231,6 +9258,11 @@ typescript@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.2.tgz#a09e1dc69bc9551cadf17dba10ee42cf55e5d56c"
   integrity sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
+
+typescript@^3.6.0-dev.20190615:
+  version "3.6.0-dev.20190615"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.0-dev.20190615.tgz#02a1a61526318901fc99c274c839cde05d4a4d8c"
+  integrity sha512-DKxiKVjcd2Tw5LGCAjO9qw4xr4/bVUyeg0PRf/90xqlnVP+nP6xG17gd0Ujn5rkBd5BDDM6NnXD0GS3rPXmDFA==
 
 ua-parser-js@^0.7.19:
   version "0.7.20"

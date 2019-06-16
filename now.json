@@ -1,5 +1,15 @@
 {
   "version": 2,
+  "env": {
+    "IS_ZEIT_NOW": "1",
+    "FORCE_COLOR": "1"
+  },
+  "build": {
+    "env": {
+      "IS_ZEIT_NOW_BUILD": "1",
+      "FORCE_COLOR": "1"
+    }
+  },
   "builds": [
     {
       "src": "server/index.js",
@@ -8,9 +18,19 @@
         "maxLambdaSize": "50mb"
       }
     },
-    { "src": "package.json", "use": "@now/static-build" }
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
   ],
   "github": {
     "silent": true
-  }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "dist/index.html"
+    },
+    { "src": "/server", "dest": "server/index.js" }
+  ]
 }

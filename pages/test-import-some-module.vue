@@ -20,7 +20,7 @@ export default {
 
 	data()
 	{
-		let re = new zhRegExp(`监听 query 参数改变`);
+		let re = new zhRegExp(`监听 query 参数改变[中文\\p{Punctuation}]`);
 		return {
 			re,
 		}
