@@ -20,3 +20,12 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## test link
+
+| site | mode |
+|:-----|:-----|
+| [zeit / now.sh](https://test-nuxt-app.bluelovers.now.sh) | static, support ssr but fail deploy |
+| [heroku](https://calm-gorge-17054.herokuapp.com/) | ssr |
+| [netlify](https://kind-almeida-12aad0.netlify.com/) | static |
+
