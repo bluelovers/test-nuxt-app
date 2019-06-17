@@ -54,7 +54,7 @@
     "consola": "^2.7.1",
     "esm": "^3.2.25",
     "material-design-icons-iconfont": "^5.0.1",
-    "now-node-async": "^0.8.1-test.4",
+    "now-node-async": "^0.8.1-test.5",
     "nuxt": "^2.8.1",
     "nuxt-i18n": "^5.12.4",
     "nuxt-vuex-localstorage": "^1.2.6",
