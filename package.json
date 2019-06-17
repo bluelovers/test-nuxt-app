@@ -8,6 +8,7 @@
   "author": "bluelovers",
   "main": "nuxt.config.ts",
   "scripts": {
+    "heroku-postbuild": "yarn run build",
     "build": "nuxt build",
     "build:generate": "nuxt generate",
     "build:netlify": "yarn run install:peer && yarn run nuxt:generate",
