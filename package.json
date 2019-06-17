@@ -36,6 +36,7 @@
     "serve:nuxt": "nuxt",
     "sort-package-json": "npx sort-package-json ./package.json",
     "start": "nuxt start",
+    "git:push:heroku": "git push heroku",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:config": "tsc --showConfig",
     "tsc:ts-node": "tsc -p tsconfig.ts-node.json"
