@@ -8,6 +8,9 @@ import createZhRegExpCorePlugin from 'regexp-cjk-plugin-escape-unicode-property'
 
 export const zhRegExp = _zhRegExp.use({
 	flags: 'u',
+
+	noUniqueClass: true,
+
 	on: [
 		createZhRegExpPlugin({
 			autoVoice: true,
