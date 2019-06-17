@@ -31,7 +31,17 @@
       "src": "/",
       "dest": "dist/index.html"
     },
-    { "src": "/server", "dest": "server/index.js" }
+    {
+      "src": "/server",
+      "dest": "server/index.js"
+    }
   ],
-  "regions": ["hkg", "tpe", "hnd"]
+  "regions": [
+    "hkg",
+    "tpe",
+    "hnd",
+    "hkg1",
+    "tpe1",
+    "hnd1"
+  ]
 }
