@@ -5,4 +5,4 @@ require = require("esm")(module/*, options*/);
 //console.log(`ts-node register`);
 //require('ts-node/register/transpile-only');
 console.log(`require server/core`);
-module.exports = require('./core.js').default;
+module.exports = require('./core').default;
