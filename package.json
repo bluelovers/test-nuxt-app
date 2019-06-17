@@ -8,7 +8,6 @@
   "author": "bluelovers",
   "main": "nuxt.config.ts",
   "scripts": {
-    "heroku-postbuild": "yarn run build",
     "build": "nuxt build",
     "build:generate": "nuxt generate",
     "build:netlify": "yarn run install:peer && yarn run nuxt:generate",
@@ -21,6 +20,7 @@
     "express:dev": "cross-env NODE_ENV=development nodemon",
     "express:start": "cross-env NODE_ENV=production node server/index",
     "generate": "nuxt generate",
+    "heroku-postbuild": "yarn run build",
     "install:peer": "node ./install-peer.js",
     "lint": "npx eslint **/*.ts",
     "lint:vue": "eslint --ext .ts,.vue --ignore-path .gitignore .",
