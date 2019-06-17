@@ -7,6 +7,7 @@ import createZhRegExpPlugin from 'regexp-cjk-plugin-extra';
 import createZhRegExpCorePlugin from 'regexp-cjk-plugin-escape-unicode-property';
 
 export const zhRegExp = _zhRegExp.use({
+	flags: 'u',
 	on: [
 		createZhRegExpPlugin({
 			autoVoice: true,
