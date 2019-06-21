@@ -51,7 +51,7 @@ export async function start()
 	// Give nuxt middleware to express
 	app.use(nuxt.render)
 
-	if (!(process.env.IS_ZEIT_NOW || process.env.IS_ZEIT_NOW_BUILD))
+	if (1 || !(process.env.IS_ZEIT_NOW || process.env.IS_ZEIT_NOW_BUILD))
 	{
 		// Listen the server
 		app.listen(port, host)
