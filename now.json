@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "IS_ZEIT_NOW": "1",
-    "FORCE_COLOR": "1"
-  },
   "build": {
     "env": {
       "IS_ZEIT_NOW_BUILD": "1",
