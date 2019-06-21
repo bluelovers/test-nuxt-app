@@ -1,0 +1,8 @@
+{
+  "extends": "@bluelovers/tsconfig/vue/nuxt.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "skipLibCheck": true
+  }
+}

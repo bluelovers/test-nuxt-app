@@ -1,0 +1,24 @@
+{
+  "extends": "@bluelovers/tsconfig/vue/nuxt.json",
+  "compilerOptions": {
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "jsx": "preserve",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "dist",
+    "static",
+    ".netlify",
+    ".nuxt",
+    "node_modules"
+  ]
+}

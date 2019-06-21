@@ -1,0 +1,14 @@
+{
+  "parser": "vue-eslint-parser",
+  "extends": [
+    "plugin:vue/recommended",
+    "bluelovers"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {}
+}
