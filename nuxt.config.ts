@@ -49,6 +49,7 @@ export default <NuxtConfiguration>{
 	*/
 	modules: [
 		'@nuxtjs/vuetify',
+		'@nuxtjs/markdownit',
 		// Doc: https://axios.nuxtjs.org/usage
 		'@nuxtjs/axios',
 		'@nuxtjs/pwa',
@@ -106,5 +107,18 @@ export default <NuxtConfiguration>{
 		config: {
 			prettify: false,
 		},
+	},
+	/**
+	 * [optional] markdownit options
+	 * See https://github.com/markdown-it/markdown-it
+	 */
+	markdownit: {
+		preset: 'default',
+		html: true,
+		xhtmlOut: true,
+		linkify: true,
+		breaks: true,
+		use: [],
+		injected: true,
 	},
 }
