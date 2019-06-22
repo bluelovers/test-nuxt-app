@@ -35,12 +35,12 @@
     "tsc:config": "tsc --showConfig"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "@nuxtjs/vuetify": "0.5.5",
+    "@nuxtjs/vuetify": "0.5.6",
     "@nuxtjs/markdownit": "^1.2.5",
-    "nuxt": "^2.0.0",
-    "vue-property-decorator": "^8.1.1"
+    "nuxt": "^2.8.1",
+    "vue-property-decorator": "^8.2.1"
   },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.11",
@@ -50,16 +50,16 @@
     "@nuxtjs/eslint-module": "^0.0.1",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.0.8",
+    "@types/node": "^12.0.10",
     "@types/webpack-chain": "^5.2.0",
     "@vue/test-utils": "^1.0.0-beta.27",
-    "browser-env": "^3.2.5",
+    "browser-env": "^3.2.6",
     "cross-env": "^5.2.0",
     "material-design-icons-iconfont": "^5.0.1",
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.19.1",
     "require-extension-hooks": "^0.3.3",
-    "require-extension-hooks-babel": "^0.1.1",
-    "require-extension-hooks-vue": "^2.0.0",
+    "require-extension-hooks-babel": "^1.0.0",
+    "require-extension-hooks-vue": "^3.0.0",
     "roboto-fontface": "^0.10.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
