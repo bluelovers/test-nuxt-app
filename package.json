@@ -31,6 +31,7 @@
     "postpublish": "git commit -m \"publish new version\" .",
     "sort-package-json": "npx sort-package-json ./package.json",
     "start": "nuxt start",
+    "test": "mocha -r \"./test/helpers/_setup.js\" \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
     "tsc:config": "tsc --showConfig"
   },
   "dependencies": {

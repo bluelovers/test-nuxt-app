@@ -161,3 +161,4 @@ coverage
 !/test/helpers/setup.js
 !/test/specs/Logo.spec.js
 /.npmignore
+!/test/helpers/_setup.js
