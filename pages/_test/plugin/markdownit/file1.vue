@@ -4,7 +4,7 @@
 
 <script lang="ts">
 // @ts-ignore
-import hello from './hello.md'
+import hello from '~/assets/_test/plugin/markdownit/hello.md'
 
 export default {
 	name: "file1",

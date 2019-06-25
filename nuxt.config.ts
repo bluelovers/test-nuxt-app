@@ -74,11 +74,17 @@ export default <NuxtConfiguration>{
 			error: colors.deepOrange.accent4,
 			success: colors.green.accent3,
 		},
+		defaultAssets: {
+			font: false,
+			icons: false,
+		},
 	},
 	/*
 	** Build configuration
 	*/
 	build: {
+		analyze: true,
+
 		/*
 		** You can extend webpack config here
 		*/

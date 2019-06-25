@@ -6,7 +6,7 @@
 		<div>{{kkk}}</div>
 
 		<LazyHydrate ssr-only>
-			<div>
+			<div :key="b">
 				<div>{{date}}</div>
 				<div>{{text}}</div>
 			</div>

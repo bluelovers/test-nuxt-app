@@ -1,4 +1,4 @@
-<template lang="md" src="./hello.md">
+<template lang="md" src="~/assets/_test/plugin/markdownit/hello.md">
 
 </template>
 

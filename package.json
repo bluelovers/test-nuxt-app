@@ -42,6 +42,8 @@
     "nuxt": "^2.8.1",
     "nuxt-property-decorator": "^2.3.0",
     "vue-lazy-hydration": "^1.0.0-beta.9",
+    "sass": "^1.21.0",
+    "sass-loader": "^7.1.0",
     "vue-property-decorator": "^8.2.1"
   },
   "devDependencies": {
